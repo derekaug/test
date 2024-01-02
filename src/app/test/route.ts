@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export async function PATCH(
-  request: NextRequest,
-  { params: { mlsID } }: { params: { mlsID: string } }
-) {
+export async function PATCH(request: NextRequest) {
   return NextResponse.json({ message: "Hello World!" });
 }
